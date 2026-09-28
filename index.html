@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<!-- 声明文档类型为 HTML5 -->
+<html lang="zh-CN">
+<head>
+  <!-- 网页字符编码，保证中文正常显示 -->
+  <meta charset="UTF-8">
+  <!-- 让网页在手机等移动设备上自适应宽度 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- 浏览器标签栏显示的标题 -->
+  <title>Maze · Web Developer Portfolio</title>
+  <!-- 引入外部样式表，负责网页外观 -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===== 顶部 Hero 区：个人介绍 ===== -->
+  <header class="hero">
+    <!-- 问候语（主标题） -->
+    <h1 class="hero__greeting">Hi, I'm Maze 👋</h1>
+    <!-- 职业身份 -->
+    <p class="hero__role">Web Developer</p>
+    <!-- 个人简介 -->
+    <p class="hero__bio">
+      热爱前端开发，正在用原生 HTML / CSS / JavaScript 打造影视数据可视化等 Web 项目。
+    </p>
+
+    <!-- 技能标签组 -->
+    <div class="hero__skills">
+      <span class="skill-tag">HTML</span>
+      <span class="skill-tag">CSS</span>
+      <span class="skill-tag">JS</span>
+      <span class="skill-tag">API Integration</span>
+      <span class="skill-tag">Chart.js</span>
+    </div>
+  </header>
+
+  <!-- ===== 主内容区：作品展示 ===== -->
+  <main class="projects">
+    <h2 class="projects__title">Projects</h2>
+
+    <!-- 作品网格容器：卡片会排成多列 -->
+    <div class="projects__grid">
+
+      <!-- 01 号作品：CineHub 追剧看板 -->
+      <article class="project-card">
+        <!-- 封面区：先用「渐变 + emoji」占位，之后可替换成真实项目截图 <img> -->
+        <div class="project-card__cover">
+          <span>🎬 CineHub</span>
+        </div>
+
+        <!-- 卡片正文区 -->
+        <div class="project-card__body">
+          <h3 class="project-card__title">CineHub 追剧看板</h3>
+          <p class="project-card__desc">
+            基于 TMDB API 的影视追剧看板，支持搜索、收藏持久化存储与流派数据可视化。
+          </p>
+
+          <!-- 技术栈 Badge -->
+          <div class="project-card__badges">
+            <span class="badge">JS</span>
+            <span class="badge">TMDB API</span>
+            <span class="badge">Chart.js</span>
+            <span class="badge">LocalStorage</span>
+          </div>
+
+          <!-- 操作按钮：target="_blank" 表示在新标签页打开 -->
+          <div class="project-card__actions">
+            <a class="btn btn--primary" href="https://maze9797maze.github.io/cine-hub/" target="_blank">🚀 在线预览</a>
+            <a class="btn btn--ghost" href="https://github.com/maze9797maze/cine-hub" target="_blank">💻 源码仓库</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- 02 号作品：Coming Soon 占位卡片 -->
+      <article class="project-card project-card--coming">
+        <div class="project-card__cover project-card__cover--muted">
+          <span>🚧</span>
+        </div>
+        <div class="project-card__body">
+          <h3 class="project-card__title">Coming Soon</h3>
+          <p class="project-card__desc">下一个精彩 Web 项目准备中...</p>
+        </div>
+      </article>
+
+    </div>
+  </main>
+
+  <!-- ===== 页脚 ===== -->
+  <footer class="footer">
+    <p class="footer__copy">© 2026 Maze. All rights reserved.</p>
+    <!-- 社交链接 -->
+    <div class="footer__links">
+      <a href="https://github.com/maze9797maze" target="_blank">GitHub</a>
+      <a href="mailto:maze9797maze@gmail.com">Email</a>
+    </div>
+  </footer>
+
+</body>
+</html>
